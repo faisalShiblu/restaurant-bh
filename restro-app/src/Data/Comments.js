@@ -1,4 +1,4 @@
-const Dishes = [
+const Comments = [
     {
         dishId: 1,
         id: 1,
@@ -242,4 +242,4 @@ const Dishes = [
     // }
 ];
 
-export default Dishes;
+export default Comments;

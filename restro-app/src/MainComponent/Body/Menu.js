@@ -47,7 +47,7 @@ class Menu extends Component {
                     <CardColumns>
                         {menu}
                     </CardColumns>
-                    <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}
+                    <Modal isOpen={this.state.modalOpen}
                         style={{ maxWidth: '700px', width: '100%' }} >
                         <ModalBody>
                             {dishDetail}
