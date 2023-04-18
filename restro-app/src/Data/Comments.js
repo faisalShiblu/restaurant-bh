@@ -198,48 +198,39 @@ const Comments = [
         comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus',
         author: 'shanto',
         date: '2007-12-12T15:15:28.2777Z'
+    },
+    {
+        dishId: 6,
+        id: 26,
+        rating: 5,
+        comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus',
+        author: 'shanto',
+        date: '2007-12-12T15:15:28.2777Z'
+    },
+    {
+        dishId: 6,
+        id: 27,
+        rating: 5,
+        comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus',
+        author: 'shanto',
+        date: '2007-12-12T15:15:28.2777Z'
+    },
+    {
+        dishId: 6,
+        id: 28,
+        rating: 5,
+        comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus',
+        author: 'shanto',
+        date: '2007-12-12T15:15:28.2777Z'
+    },
+    {
+        dishId: 6,
+        id: 29,
+        rating: 5,
+        comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus',
+        author: 'shanto',
+        date: '2007-12-12T15:15:28.2777Z'
     }
-    // },
-    // {
-    //     dishId: 6,
-    //     id: 26,
-    //     rating: 5,
-    //     comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus',
-    //     author: 'shanto',
-    //     date: '2007-12-12T15:15:28.2777Z'
-    // },
-    // {
-    //     dishId: 6,
-    //     id: 27,
-    //     rating: 5,
-    //     comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus',
-    //     author: 'shanto',
-    //     date: '2007-12-12T15:15:28.2777Z'
-    // },
-    // {
-    //     dishId: 6,
-    //     id: 30,
-    //     rating: 5,
-    //     comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus',
-    //     author: 'shanto',
-    //     date: '2007-12-12T15:15:28.2777Z'
-    // },
-    // {
-    //     dishId: 6,
-    //     id: 28,
-    //     rating: 5,
-    //     comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus',
-    //     author: 'shanto',
-    //     date: '2007-12-12T15:15:28.2777Z'
-    // },
-    // {
-    //     dishId: 6,
-    //     id: 29,
-    //     rating: 5,
-    //     comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus',
-    //     author: 'shanto',
-    //     date: '2007-12-12T15:15:28.2777Z'
-    // }
 ];
 
 export default Comments;
