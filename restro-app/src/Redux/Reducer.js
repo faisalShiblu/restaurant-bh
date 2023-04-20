@@ -1,23 +1,30 @@
-import Comments from "../Data/Comments";
 import { combineReducers } from "redux";
 import * as actionType from './ActionType';
-
 import { initalContactForm } from "./Forms";
 import { createForms } from "react-redux-form";
 
-const dishReducer = (dishState = { isLoading: false, dishes: [] }, action) => {
+const dishReducer = (dishState = { isLoading: false, dishes: [], errorMessage: null }, action) => {
     switch (action.type) {
         case actionType.DISHES_LOADING:
             return {
                 ...dishState,
                 isLoading: true,
+                errorMessage: null,
                 dishes: []
             }
         case actionType.LOAD_DISHES:
             return {
                 ...dishState,
                 isLoading: false,
+                errorMessage: null,
                 dishes: action.payload
+            }
+        case actionType.DISHES_FAILED:
+            return {
+                ...dishState,
+                isLoading: false,
+                errorMessage: action.payload,
+                dishes: []
             }
         default:
             return dishState;
@@ -25,13 +32,26 @@ const dishReducer = (dishState = { isLoading: false, dishes: [] }, action) => {
     }
 }
 
-const commentReducer = (commentState = Comments, action) => {
+const commentReducer = (commentState = { isLoading: false, comments: [] }, action) => {
     switch (action.type) {
+        case actionType.COMMENT_LOADING:
+            return {
+                ...commentState,
+                isLoading: true,
+                comments: []
+            }
+        case actionType.LOAD_COMMENT:
+            return {
+                ...commentState,
+                isLoading: false,
+                comments: action.payload
+            }
         case actionType.ADD_COMMENT:
             let comment = action.payload;
-            comment.id = commentState.length + 1;
-            comment.date = new Date().toDateString();
-            return commentState.concat(comment);
+            return {
+                ...commentState,
+                comments: commentState.comments.concat(comment)
+            }
         default:
             return commentState;
 
